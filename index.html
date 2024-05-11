@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWagTraders</title>
+  </head>
+  <style>
+    body {
+      margin: 50px;
+    }
+    .container-1 {
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      margin: 30px auto;
+      max-width: 75%;
+      border-radius: 10px;
+      padding-top: 30px;
+    }
+    .container-2 {
+      background: #e0ffcd;
+    }
+    h1 {
+      text-align: center;
+      font-size: 34px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      border: 1px solid;
+      padding: 15px;
+      margin: 30px auto;
+      max-width: 80%;
+      border-radius: 4px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 25px;
+    }
+    hr {
+      max-width: 80%;
+      opacity: 0.5;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    .call-to-action {
+      text-align: center;
+      font-size: 14px;
+    }
+    .copyright {
+      opacity: 0.7;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    p {
+      line-height: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 18px 75px;
+    }
+    a {
+      font-size: smaller;
+      margin-left: 75px;
+    }
+
+    button {
+      font-size: 28px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      padding: 5px 10px;
+      border-width: 1px;
+      color: white;
+      background: #00bbf0;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+      background: transparent;
+      cursor: pointer;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="container-1">
+      <h1>TailWagTraders</h1>
+      <h2>Bringing Joy One Wag at a Time</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/384/original/A_German_Shepherd_do.jpg?1711963367"
+        alt="German_Shepherd Dog"
+      />
+      <p>
+        The German Shepherd Dog, renowned for its intelligence, loyalty, and
+        versatility, stands as one of the most beloved and recognizable breeds
+        worldwide. With its distinctive appearance characterized by a strong,
+        muscular build and a noble, alert expression, the German Shepherd exudes
+        confidence and strength. Originally bred in Germany for herding sheep,
+        this breed has since proven itself invaluable in a myriad of roles,
+        including police and military work, search and rescue, service dogs for
+        individuals with disabilities, and as cherished family companions. Known
+        for its unwavering loyalty and deep bond with its human family, the
+        German Shepherd is highly trainable, excelling in obedience, agility,
+        and protection work. Its keen intellect and innate desire to work make
+        it an ideal partner for various tasks, while its loving and protective
+        nature endears it to all who have the privilege of sharing their lives
+        with this remarkable breed.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/German_Shepherd" target="_blank">
+        Read on wikipedia</a
+      >
+      <div class="container-2">
+        <p class="call-to-action">
+          <span class="call-to-action"
+            >If you're after a loyal, intelligent and very active dog, then a
+            German Shepherd could be the perfect pet for you.</span
+          >
+        </p>
+        <button>Contact Us</button>
+        <p class="copyright">
+          <span class="copyright"
+            >©2024@TailWagTraders
+            <br />
+            <strong><em> Coded by Beatrice</em></strong></span
+          >
+        </p>
+      </div>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("what is your email address?");
+        let number = prompt("How many dogs do you want to order?");
+        if (number > 0) {
+          alert(
+            " Thank you " + name + ". We shall get in touch through email."
+          );
+        } else {
+          alert("Thank you " + name);
+        }
+      }
+      document.querySelector("button").addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
